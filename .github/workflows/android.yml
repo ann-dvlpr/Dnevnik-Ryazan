@@ -29,4 +29,8 @@ jobs:
       with:
         name: Upload builded APK
         path: ~/Dnevnik-Ryazan/app/build/outputs/apk*.apk
-            
+    - name: Log all directories
+      uses: shinhwagk/remote-bash@0.0.1
+      with:
+        args: ls ~ -R
+        
